@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:"Gaegu",cursive;
+    font-family:"Jua", sans-serif;
 }
 
 body{
@@ -131,8 +133,9 @@ button:hover{
     border-radius:20px;
 }
 
-/* 🌿 애니메이션 느낌 살짝 */
+/* 🌿 살짝 떠있는 느낌 */
 .container:hover{
     transform:translateY(-2px);
     transition:.2s;
 }
+
