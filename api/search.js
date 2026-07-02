@@ -14,8 +14,12 @@ export default async function handler(req, res) {
 
     try {
 
-        const response = await fetch(url);
-        const data = await response.json();
+       const response = await fetch(url);
+const text = await response.text();
+
+const data = JSON.parse(
+    text.replace(/<.*?>/g, "")
+);
 
         const items = (data.item || []).map(book => ({
             title: book.title,
