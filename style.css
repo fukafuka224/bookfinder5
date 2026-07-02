@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Gaegu",cursive;
+}
+
+body{
+    background:linear-gradient(#b8ec9b,#eaf7d8);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:650px;
+    background:#fffdf5;
+    border-radius:30px;
+    padding:30px;
+    text-align:center;
+    border:6px solid #86c96b;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+h1{
+    font-size:40px;
+    color:#3f6f2f;
+}
+
+p{
+    color:#666;
+    margin-bottom:10px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin:6px 0;
+    border:none;
+    border-radius:15px;
+    background:#eef9e6;
+    font-size:16px;
+    outline:none;
+}
+
+input:focus{
+    box-shadow:0 0 0 4px #bce5a8;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:10px;
+    border:none;
+    border-radius:15px;
+    background:#6ecb4f;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+}
+
+button:hover{
+    transform:scale(1.03);
+    background:#5db640;
+}
+
+#result{
+    margin-top:20px;
+}
+
+/* 📚 책 카드 */
+.book{
+    background:#f6fff0;
+    border-radius:20px;
+    padding:20px;
+    margin-top:15px;
+    border:3px dashed #9ad97b;
+}
+
+.book img{
+    width:160px;
+    border-radius:15px;
+    margin-bottom:10px;
+}
+
+.book h2{
+    color:#2f5d21;
+    margin-bottom:10px;
+}
+
+.book p{
+    margin:5px 0;
+}
+
+/* 📍 버튼 */
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+
+.buttons a{
+    text-decoration:none;
+    color:white;
+    padding:10px 15px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.buttons a:hover{
+    transform:scale(1.05);
+}
+
+.aladin{background:#2d7ff9;}
+.yes24{background:#ff7a3d;}
+.kyobo{background:#3dbb6a}
+
+/* 🗺️ 지도 */
+#map{
+    width:100%;
+    height:300px;
+    margin-top:20px;
+    border-radius:20px;
+}
+
+/* 🌿 애니메이션 느낌 살짝 */
+.container:hover{
+    transform:translateY(-2px);
+    transition:.2s;
+}
