@@ -16,6 +16,7 @@ async function searchAll() {
     const keyword = document.getElementById("searchInput").value.trim();
     const region = document.getElementById("regionInput").value.trim();
     const result = document.getElementById("result");
+    const map = document.getElementById("map");
 
     if (!keyword || !region) {
         result.innerHTML = "<p>📚 책과 지역을 모두 입력해줘!</p>";
@@ -36,6 +37,8 @@ async function searchAll() {
         }
 
         const book = data.items[0];
+
+        map.style.display="block";
 
         result.innerHTML = `
             <div class="book">
@@ -62,6 +65,7 @@ async function searchAll() {
         `;
 
     } catch (err) {
+        map.style.display="none";
         result.innerHTML = "<p>⚠️ 책 검색 실패</p>";
         return;
     }
